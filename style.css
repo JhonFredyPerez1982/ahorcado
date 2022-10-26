@@ -1,0 +1,198 @@
+body{
+  min-width: 1224px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  background: #F3F5FC;
+}
+
+.subrayado{
+  display:flex;
+}
+.dibujarLineas{
+  border-bottom: solid 4px #0A3871;
+  width: 30px;
+  margin: 10px;
+}
+.btn-iniciar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  position: absolute;
+  width: 317px;
+  height: 114px;
+  left: 0;
+  top: 20rem;
+  margin: 270px 0px 0px 20px;
+  
+  /* Dark blue/dark-blue-300 */
+  
+  background: #0A3871;
+  border-radius: 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 22px;
+  display: flex;
+  justify-content: center;
+
+/* White */
+
+  color: #FFFFFF;
+} 
+  
+.logo{
+  position: absolute;
+  left: 50px;
+  right: 37.43%;
+  top: 50px;
+  bottom: 0%;
+  width: 50px;
+  height:50px;
+}
+
+.btn-azul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+
+  position: static;
+  width: 328px;
+  height: 67px;
+  left: 0px;
+  top: 0px;
+
+  background: #0A3871;
+  border-radius: 24px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 24px;
+  flex-grow: 0;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 19px;
+  justify-content: center; 
+
+}
+.canvas{
+  margin-left: 2.5rem;
+  width: 1024px;
+  height:800px;
+  background:url(el-juego-de-el-ahorcado.png);
+}
+.botones-div-canvas{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  position: absolute;
+  width: 680px;
+  height: 67px;
+  left: 28.5rem;
+  top: 760px;
+  margin-bottom: 25px;
+ }
+ .botones-home{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  left:42rem;
+ }
+ .question{
+  color:darkblue;
+ }
+ .color{
+  color:gray;
+}
+
+
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 481px) and (max-width: 796px) {
+  .logo{
+    left: 40px;
+    right: 37.43%;
+    top: 40px;
+    bottom: 0%;
+    width: 50px;
+    height: 50px;
+  } 
+  .botones-home{
+    top: 16rem;
+    left: 12.2rem;
+  }
+  .btn-iniciar{
+    width: 289px;
+    height: 100px;
+    top: 0;
+    font-size: 22px;
+    line-height: 20px;
+    margin: 370px 0px 0px 170px;
+  
+  }
+  .btn-azul{
+    width: 300px;
+    height: 67px;
+    left: 31.5%;
+    top: 450px;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+    .canvas{
+      margin-left: -4rem;
+      width: 739px;
+      height:800px
+    }
+    .botones-div-canvas{
+      width: 680px;
+      height: 67px;
+      left: 9rem;
+      top:64rem;
+     }
+ }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  body{
+    min-width: 375px;
+    min-height: 667px;
+  }
+  .logo{
+    left: 4.27%;
+    right: 87.2%;
+    top: 25px;
+    bottom: 25px;
+    width: 50px;
+    height: 50px;
+  } 
+  .botones-home{
+    top: 16rem;
+    left: 4.2rem;
+  }
+
+  .btn-iniciar{
+  width: 230px;
+  height: 90px;
+  left: 0;
+  top: 0;
+  font-size: 18px;
+  line-height: 10px;
+  margin: 370px 0px 0px 170px;
+  
+} .canvas{
+  width:  30%;
+      margin-left: 2.5rem;
+      width: 1024px;
+      height:800px
+    }
+  }
